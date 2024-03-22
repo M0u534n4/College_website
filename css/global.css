@@ -145,76 +145,66 @@ html {
   scroll-behavior: smooth;
 }
 
-/*font*/
+body {
+  font-family: "BPG Arial";
+}
+
 header {
   width: 100%;
-  background-color: #2f2fa2;
-  position: fixed;
+  background-color: #395dbf;
+  transition: all 1.3s;
 }
 header .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-header .container .navbar {
-  width: 100%;
-}
-header .container .navbar .container-fluid {
-  width: 100%;
-}
-header .container .navbar .container-fluid a img {
+header .container .navbar-brand img {
   width: 50px;
 }
-header .container .navbar .container-fluid .collapse .navbar-nav {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
+header .container a {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  transition: all 0.4s ease 0s;
+  border: transparent;
+  letter-spacing: 0.25px;
+  border-radius: 20px;
 }
-header .container .navbar .container-fluid .collapse .navbar-nav a {
-  color: #ffffff;
-  padding: 10px;
+header .container .nav-link:hover {
+  opacity: 0.8;
+  color: #fff;
 }
-header .container .navbar .container-fluid .collapse .navbar-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-  line-height: 1;
-  transform-origin: middle bottom;
-  transform: scaleX(0);
-  transition: transform 0.14s linear;
-}
-header .container .navbar .container-fluid .collapse .navbar-nav a:hover:after,
-header .container .navbar .container-fluid .collapse .navbar-nav a:active:after {
-  transform: scaleX(1);
-  transform-origin: middle bottom;
-  transition: transform 0.14s linear;
-}
-header .container .navbar .container-fluid .collapse .navbar-nav :hover {
-  color: #8f8bda;
+header .container .nav-link.active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 1;
 }
 
-.s-1 {
-  background-color: #2f2fa2;
-  padding-top: 120px;
-  padding-bottom: 60px;
+.change {
+  border-radius: 0px 0px 25px 25px;
+  position: fixed;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.35s ease-out;
 }
-.s-1 .container {
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.s-1 {
+  background-color: #395dbf;
+  padding-top: 60px;
+  padding-bottom: 2000px;
+}
+.s-1 .contaner {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.s-1 .container img {
-  width: 500px;
-}
-.s-1 .container .txtdiv {
-  width: 50%;
-}
-.s-1 .container .txtdiv p {
-  font-size: 35px;
-  color: white;
+.s-1 .contaner .carousel {
+  border-radius: 55px 55px 55px 55px;
 }/*# sourceMappingURL=global.css.map */

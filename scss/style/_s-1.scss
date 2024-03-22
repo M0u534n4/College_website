@@ -1,22 +1,12 @@
 .s-1 {
-  background-color: $base-color;
-  padding-top: 120px;
-  padding-bottom: 60px;
-  .container {
+  background-color: $base-color1;
+  padding-top: 60px;
+  padding-bottom: 2000px;
+  .contaner {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    img {
-      width: 500px;
-    }
-    .txtdiv {
-      width: 50%;
-      p {
-        font-size: 35px;
-        color: white;
-      }
+    .carousel {
+      border-radius: 55px 55px 55px 55px;
     }
   }
 }
