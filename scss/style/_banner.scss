@@ -1,0 +1,14 @@
+.banner {
+  background-color: $base-color1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    .carousel {
+      .carousel-inner {
+        border-radius: 25px;
+      }
+    }
+  }
+}
