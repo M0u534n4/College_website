@@ -231,6 +231,7 @@ header .container .dropdown .dropdown-menu a {
 }
 .banner .container img {
   width: 100%;
+  border-radius: 25px;
 }
 
 .about {
