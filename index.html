@@ -25,6 +25,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" href="images/logo.png" />
 
     <link rel="stylesheet" href="css/global.css" />
 
@@ -33,7 +34,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Home</title>
+    <title>მთავარი</title>
   </head>
   <body>
     <header>
@@ -64,9 +65,27 @@
                     >მთავარი</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">ჩვენს შესახებ</a>
-                </li>
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    ჩვენს შესახებ
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">ეს</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">ის</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">იურიდიული დოკუმენტი</a>
+                    </li>
+                  </ul>
+                </div>
                 <li class="nav-item">
                   <a class="nav-link" href="#news">სიახლეები</a>
                 </li>
@@ -77,17 +96,20 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">კონტაქტი</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">რაღაც დოკუმენტი</a>
-                </li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
     </header>
-    <!--banner section-->
+
     <section class="banner" id="banner">
+      <div class="container">
+        <img src="images/university.jpg" alt="" />
+      </div>
+    </section>
+    <!--banner section-->
+    <!--<section class="banner" id="banner">
       <div class="container">
         <div
           id="carouselExampleCaptions"
@@ -165,9 +187,7 @@
           </button>
         </div>
       </div>
-    </section>
-
-    <section class="about" id="about"></section>
+    </section>-->
 
     <section class="news" id="news"></section>
 
@@ -176,64 +196,66 @@
         <h1>პროგრამები</h1>
         <div class="card-wrapper">
           <div class="card" style="max-width: 355px">
-            <img
-              src="images/Po8boBSzfQifAxkbgftCLV-1200-80.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <img src="images/it.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">ინფორმაციული ტექნოლოგია</h5>
+              <div class="card-txt">
+                <p class="card-lvl">მესამე დონე</p>
+                <h5 class="card-title">ინფორმაციული ტექნოლოგია</h5>
+              </div>
               <a href="#" class="btn btn-primary">მეტი</a>
             </div>
           </div>
           <div class="card" style="max-width: 355px">
-            <img
-              src="images/Po8boBSzfQifAxkbgftCLV-1200-80(1).jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <img src="images/farmacy.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">ფარმაცია</h5>
+              <div class="card-txt">
+                <p class="card-lvl">მეხუთე დონე</p>
+                <h5 class="card-title">ფამაცია</h5>
+              </div>
               <a href="#" class="btn btn-primary">მეტი</a>
             </div>
           </div>
           <div class="card" style="max-width: 355px">
             <img src="images/veterinary.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">ვეტერინარია</h5>
+              <div class="card-txt">
+                <p class="card-lvl">მეხუთე დონე</p>
+                <h5 class="card-title">ვეტერინარია</h5>
+              </div>
               <a href="#" class="btn btn-primary">მეტი</a>
             </div>
           </div>
           <div class="card" style="max-width: 355px">
             <img
-              src="images/Po8boBSzfQifAxkbgftCLV-1200-80.jpg"
+              src="images/office business.jpg"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">ინფორმაციული ტექნოლოგია</h5>
+              <div class="card-txt">
+                <p class="card-lvl">მეოთხე დონე</p>
+                <h5 class="card-title">საოფისე საქმე</h5>
+              </div>
               <a href="#" class="btn btn-primary">მეტი</a>
             </div>
           </div>
           <div class="card" style="max-width: 355px">
-            <img
-              src="images/Po8boBSzfQifAxkbgftCLV-1200-80.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <img src="images/kindergarden.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">ინფორმაციული ტექნოლოგია</h5>
+              <div class="card-txt">
+                <p class="card-lvl">მეხუთე დონე</p>
+                <h5 class="card-title">აღმზრდელი</h5>
+              </div>
               <a href="#" class="btn btn-primary">მეტი</a>
             </div>
           </div>
           <div class="card" style="max-width: 355px">
-            <img
-              src="images/Po8boBSzfQifAxkbgftCLV-1200-80.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <img src="images/bugalteri.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">ინფორმაციული ტექნოლოგია</h5>
+              <div class="card-txt">
+                <p class="card-lvl">მეხუთე დონე</p>
+                <h5 class="card-title">ბუღალტერია</h5>
+              </div>
               <a href="#" class="btn btn-primary">მეტი</a>
             </div>
           </div>

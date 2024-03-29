@@ -3,6 +3,9 @@
 body {
   font-family: $base-font;
 }
+section {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
 @import "style/header";
 @import "style/banner";
 @import "style/about";

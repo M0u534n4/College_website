@@ -14,6 +14,9 @@
       font-size: 45px;
       font-weight: 600;
       color: $card-txt;
+      @media (max-width: 356px) {
+        font-size: 25px;
+      }
     }
     .card-wrapper {
       display: flex;
@@ -33,12 +36,12 @@
         img {
           border-radius: 25px;
           overflow: hidden;
-          @media (max-width: 356px) {
+          @media (max-width: 355px) {
             max-width: 255px;
           }
         }
         .card-body {
-          padding: 20px 30px 25px 30px;
+          padding: 20px 30px 20px 30px;
           width: 100%;
           display: flex;
           justify-content: space-between;
@@ -47,12 +50,22 @@
             max-width: 255px;
             padding: 10px 20px 15px 20px;
           }
-          .card-title {
-            font-size: 22px;
-            font-weight: 600;
-            transition: all 0.3s;
-            @media (max-width: 356px) {
-              font-size: 18px;
+          .card-txt {
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            gap: 10px;
+            .card-lvl {
+              font-size: 15px;
+              color: $base-color1;
+            }
+            .card-title {
+              font-size: 22px;
+              font-weight: 600;
+              transition: all 0.3s;
+              @media (max-width: 356px) {
+                font-size: 18px;
+              }
             }
           }
           .btn {

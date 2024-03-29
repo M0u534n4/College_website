@@ -1,7 +1,6 @@
 header {
   width: 100%;
   background-color: $base-color1;
-  transition: all 1.3s;
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,6 +29,22 @@ header {
       color: $base-color2;
       background-color: rgba(255, 255, 255, 0.1);
       opacity: 1;
+    }
+    .dropdown {
+      background: transparent;
+      a {
+        background-color: transparent;
+      }
+      .dropdown-menu {
+        color: $base-color2;
+        background-color: $base-color1;
+        opacity: 1;
+        border: none;
+        a {
+          opacity: 0.8;
+          color: $base-color2;
+        }
+      }
     }
   }
 }
