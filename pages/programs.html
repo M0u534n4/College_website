@@ -7,7 +7,7 @@
     <!--font-->
     <link
       rel="stylesheet"
-      href="bpg-arial-master/bpg-arial-master/css/bpg-arial.min.css"
+      href="../bpg-arial-master/bpg-arial-master/css/bpg-arial.min.css"
     />
     <!--bootsrap-->
 
@@ -34,7 +34,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>მთავარი</title>
+    <title>პროგრამები</title>
   </head>
   <body>
     <header>
@@ -61,25 +61,44 @@
             >
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#banner"
+                  <a class="nav-link" aria-current="page" href="../index.html"
                     >მთავარი</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">ჩვენს შესახებ</a>
+                  <div class="dropdown">
+                    <a
+                      class="btn btn-secondary dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      ჩვენს შესახებ
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">ეს</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">ის</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >იურიდიული დოკუმენტი</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#news">სიახლეები</a>
+                  <a class="nav-link" href="news.html">სიახლეები</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#programs">პროგრამები</a>
+                  <a class="nav-link active" href="#">პროგრამები</a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">კონტაქტი</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">რაღაც დოკუმენტი</a>
                 </li>
               </ul>
             </div>
@@ -87,5 +106,85 @@
         </nav>
       </div>
     </header>
+
+    <section class="programs" id="programs" style="padding-top: 60px">
+      <div class="container">
+        <h1>პროგრამები</h1>
+        <div class="card-wrapper">
+          <div class="card" style="max-width: 355px">
+            <img src="../images/it.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-txt">
+                <p class="card-lvl">მესამე დონე</p>
+                <h5 class="card-title">ინფორმაციული ტექნოლოგია</h5>
+              </div>
+              <a href="programs/it.html" class="btn btn-primary">მეტი</a>
+            </div>
+          </div>
+          <div class="card" style="max-width: 355px">
+            <img src="../images/farmacy.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-txt">
+                <p class="card-lvl">მეხუთე დონე</p>
+                <h5 class="card-title">ფამაცია</h5>
+              </div>
+              <a href="#" class="btn btn-primary">მეტი</a>
+            </div>
+          </div>
+          <div class="card" style="max-width: 355px">
+            <img
+              src="../images/veterinary.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-txt">
+                <p class="card-lvl">მეხუთე დონე</p>
+                <h5 class="card-title">ვეტერინარია</h5>
+              </div>
+              <a href="#" class="btn btn-primary">მეტი</a>
+            </div>
+          </div>
+          <div class="card" style="max-width: 355px">
+            <img
+              src="../images/office business.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-txt">
+                <p class="card-lvl">მეოთხე დონე</p>
+                <h5 class="card-title">საოფისე საქმე</h5>
+              </div>
+              <a href="#" class="btn btn-primary">მეტი</a>
+            </div>
+          </div>
+          <div class="card" style="max-width: 355px">
+            <img
+              src="../images/kindergarden.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="card-txt">
+                <p class="card-lvl">მეხუთე დონე</p>
+                <h5 class="card-title">აღმზრდელი</h5>
+              </div>
+              <a href="#" class="btn btn-primary">მეტი</a>
+            </div>
+          </div>
+          <div class="card" style="max-width: 355px">
+            <img src="../images/bugalteri.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card-txt">
+                <p class="card-lvl">მეხუთე დონე</p>
+                <h5 class="card-title">ბუღალტერია</h5>
+              </div>
+              <a href="#" class="btn btn-primary">მეტი</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -2,10 +2,9 @@
 @import "style/virables";
 body {
   font-family: $base-font;
+  overflow-x: hidden;
 }
-section {
-  border-bottom: 2px solid rgb(0, 0, 0);
-}
+
 @import "style/header";
 @import "style/banner";
 @import "style/about";
@@ -13,3 +12,6 @@ section {
 @import "style/news";
 @import "style/contact";
 @import "style/footer";
+@import "style/pages-styles/news-page";
+@import "style/pages-styles/news-posts";
+@import "style/pages-styles/programs\ style";
