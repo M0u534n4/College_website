@@ -1,1 +1,1 @@
-# College_website
+# college.py

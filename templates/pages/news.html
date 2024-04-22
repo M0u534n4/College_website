@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %}
+<!-- only admin should see this -->
+<section class="admin-poster">
+  <div class="container text-container">
+    <h1>პოსტები</h1>
+    {% for field in form.errors %} {% for error in form.errors[field] %}
+    <div class="alert alert-danger"><strong>Error!</strong> {{error}}</div>
+    {% endfor %} {% endfor %}
+    <form
+      class="poster-div"
+      style="display: flex; flex-direction: column"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      {{ form.hidden_tag() }} {{ form.name(class="form-control mt-2",
+      placeholder=form.name.label.text) }} {{ form.img(class="form-control
+      mt-2", placeholder=form.img.label.text,accept=".jpg, .jepg, .svg, .png")
+      }} {{ form.submit(class="btn btn-success mt-2") }}
+    </form>
+  </div>
+</section>
+<!-- admin poster end -->
+
+<!-- posts section start -->
+<section class="posts-section">
+  {% for post in posts %}
+  <div class="container">
+    <div class="post">
+      <div class="settings-div">
+        <a href="edit_post/{{ post.id }}" class="edit"
+          ><i class="fa-solid fa-pen-to-square" style="color: #395dbf"></i
+        ></a>
+        <a href="delete_post/{{ post.id }}" class="delete"
+          ><i class="fa-solid fa-square-xmark" style="color: #395dbf"></i
+        ></a>
+      </div>
+      <div class="description">
+        <h2>{{ post.date_posted.strftime('%Y-%m-%d') }}</h2>
+        <p>{{ post.name }}</p>
+      </div>
+      <img src="/static/{{ post.img }}" alt="Image 1" />
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endblock %}
